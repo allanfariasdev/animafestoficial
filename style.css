@@ -326,8 +326,8 @@ h2 {
 }
 
 .hero-photo {
-    width: 550px;
-    height: 550px;
+    width: min(550px, 85vw);
+    height: min(550px, 85vw);
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -347,10 +347,12 @@ h2 {
 }
 
 .hero-photo>img {
-    height: 520px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
     object-fit: cover
+   
 }
-
 .floating-card {
     position: absolute;
     left: 22px;
