@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Animafest: aluguel de brinquedos para festas e eventos. Escolha seus brinquedos e solicite um orçamento pelo WhatsApp.">
+    <meta name="theme-color" content="#168bd2">
+    <title>Animafest | Aluguel de Brinquedos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23168bd2'/%3E%3Cpath d='M15 42 26 18l7 15 7-10 9 19' fill='none' stroke='%23ffd83d' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <div class="container nav-wrap">
+            <a class="brand" href="#inicio" aria-label="Animafest - início">
+                <span class="brand-mark"><img src="./img/Design_sem_nome__1_-removebg-preview.png"
+                        alt="ANIMAFES"></span>
+                <span class="brand-name">Animafest<small>Aluguel de brinquedos</small></span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#brinquedos">Brinquedos</a><a href="#como-funciona">Como funciona</a><a
+                    href="#galeria">Galeria</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+            </nav>
+            <a class="cart-button" href="#brinquedos" aria-label="Ver brinquedos escolhidos"><span>🎈</span><span
+                    class="cart-text">Meu orçamento</span><b id="cart-count">0</b></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="confetti" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow">A festa começa aqui!</span>
+                    <h1>Diversão de verdade para momentos <em>inesquecíveis.</em></h1>
+                    <p>Escolha os brinquedos, monte seu orçamento e fale com a Animafest em poucos passos. Atendimento
+                        personalizado do início ao fim.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#brinquedos">Escolher brinquedos <span>→</span></a>
+                        <a class="btn btn-ghost" href="#galeria">Ver nossas festas</a>
+                    </div>
+                    <div class="trust-row"><span>✓ Montagem cuidadosa</span><span>✓ Atendimento
+                            personalizado</span><span>✓
+                            Diversão garantida</span></div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="hero-photo">
+                        <img src="./img/Design_sem_nome__1_-removebg-preview.png"
+                            alt="Festa infantil colorida com balões">
+
+                    </div>
+                </div>
+            </div>
+            <div class="wave" aria-hidden="true"></div>
+        </section>
+
+        <section class="section toys" id="brinquedos">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div><span class="eyebrow">Monte sua diversão</span>
+                        <h2>Escolha seus brinquedos</h2>
+                    </div>
+                    <p>Toque em “Adicionar” para montar sua lista. Você poderá revisar tudo antes de enviar o pedido.
+                    </p>
+                </div>
+                <div class="filters reveal" role="group" aria-label="Filtrar brinquedos">
+                    <button class="filter active" data-filter="todos">Todos</button>
+                    <button class="filter" data-filter="camas">Camas elásticas</button>
+                    <button class="filter" data-filter="tobogas">Tobogãs</button>
+                    <button class="filter" data-filter="inflaveis">Infláveis</button>
+                    <button class="filter" data-filter="pequenos">Para os pequenos</button>
+                    <button class="filter" data-filter="servicos">Serviços</button>
+                </div>
+                <div class="toy-grid" id="toy-grid">
+                    <article class="toy-card reveal" data-category="camas" data-name="Cama Elástica P">
+                        <div class="toy-image"><img src="./img/cama elastica p.png"
+                                alt="Cama Elástica P"><span>Camas elásticas</span></div>
+                        <div class="toy-content">
+                            <h3>Cama Elástica P</h3>
+                            <p>Possui 2 metros de diâmetro e é mais baixa, ideal para crianças de até 5 anos.</p><button
+                                class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="camas" data-name="Cama Elástica M">
+                        <div class="toy-image"><img src="./img/cama elastica m.png"
+                                alt="Cama Elástica M"><span>Camas elásticas</span></div>
+                        <div class="toy-content">
+                            <h3>Cama Elástica M</h3>
+                            <p>Possui 2,5 metros de diâmetro e é mais baixa, ideal para crianças de até 8 anos.</p>
+                            <button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="camas" data-name="Cama Elástica G">
+                        <div class="toy-image"><img src="./img/cama elastica g.png"
+                                alt="Cama Elástica G"><span>Camas elásticas</span></div>
+                        <div class="toy-content">
+                            <h3>Cama Elástica G</h3>
+                            <p>Possui 3 metros de diâmetro e é indicada para crianças de até 14 anos.</p><button
+                                class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="camas" data-name="Cama Elástica GG">
+                        <div class="toy-image"><img src="./img/camaelasticagg.png"
+                                alt="Cama Elástica GG"><span>Camas elásticas</span></div>
+                        <div class="toy-content">
+                            <h3>Cama Elástica GG</h3>
+                            <p>Possui 3,5 metros de diâmetro e oferece bastante espaço para a diversão.</p><button
+                                class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="tobogas" data-name="Tobogã M">
+                        <div class="toy-image"><img src="./img/toboganovo.jpg"
+                                alt="Tobogã M"><span>Tobogãs</span></div>
+                        <div class="toy-content">
+                            <h3>Tobogã M</h3>
+                            <p>Tobogã médio com 4,2 m de altura, 7 m de comprimento e 3 m de largura.</p><button
+                                class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="tobogas" data-name="Tobogã G">
+                        <div class="toy-image"><img src="./img/toboga G.png"
+                                alt="Tobogã G"><span>Tobogãs</span></div>
+                        <div class="toy-content">
+                            <h3>Tobogã G</h3>
+                            <p>Tobogã grande com 5 m de altura, 8 m de comprimento e 4 m de largura. Indicado para
+                                crianças acima de 3 anos.</p><button class="add-button">Adicionar
+                                <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="tobogas" data-name="Tobogã Tigre">
+                        <div class="toy-image"><img src="./img/tobogatigre.png"
+                                alt="Tobogã Tigre"><span>Tobogãs</span></div>
+                        <div class="toy-content">
+                            <h3>Tobogã Tigre</h3>
+                            <p>Possui 4,2 m de altura, 6,5 m de comprimento e 3 m de largura. Indicado a partir de 2
+                                anos.</p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="inflaveis" data-name="Kiddie Play Aventura">
+                        <div class="toy-image"><img src="./img/kidieplay.png"
+                                alt="Kiddie Play Aventura"><span>Infláveis</span></div>
+                        <div class="toy-content">
+                            <h3>Kiddie Play Aventura</h3>
+                            <p>Tem espaço para pular, joão-bobo, escalada e tobogã. Mede 3,5 m de altura, 7 m de
+                                comprimento e 4,2 m de largura. A partir de 4 anos.</p><button
+                                class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="inflaveis" data-name="Guerra de Cotonetes">
+                        <div class="toy-image"><img src="./img/guerracoto.png"
+                                alt="Guerra de Cotonetes"><span>Infláveis</span></div>
+                        <div class="toy-content">
+                            <h3>Guerra de Cotonetes</h3>
+                            <p>Brinquedo inflável com 5 x 5 metros, indicado para crianças a partir de 5 anos.</p>
+                            <button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="inflaveis" data-name="Futebol de Sabão">
+                        <div class="toy-image"><img src="./img/futsabao.jpg"
+                                alt="Futebol de Sabão"><span>Infláveis</span></div>
+                        <div class="toy-content">
+                            <h3>Futebol de Sabão</h3>
+                            <p>Mede 5 x 10 metros e pode ser usado seco ou molhado com o canhão de espuma. A partir de 4
+                                anos.</p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="inflaveis" data-name="Chute a Gol">
+                        <div class="toy-image"><img src="./img/chuteaoalvo.png"
+                                alt="Chute a Gol"><span>Infláveis</span></div>
+                        <div class="toy-content">
+                            <h3>Chute a Gol</h3>
+                            <p>Trave inflável com três alvos. Mede 1,9 m de altura, 3 m de comprimento e 3 m de largura.
+                            </p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="inflaveis" data-name="Air Soccer">
+                        <div class="toy-image"><img src="./img/airsoccer.png"
+                                alt="Air Soccer"><span>Infláveis</span></div>
+                        <div class="toy-content">
+                            <h3>Air Soccer</h3>
+                            <p>Mesa de pebolim inflável indicada a partir de 4 anos. Mede 1,5 x 2 m e possui 0,8 m de
+                                altura.</p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="pequenos"
+                        data-name="Piscina de Bolinhas Plus do Mickey">
+                        <div class="toy-image"><img src="./img/piscinamikei.png"
+                                alt="Piscina de Bolinhas Plus do Mickey"><span>Para os pequenos</span></div>
+                        <div class="toy-content">
+                            <h3>Piscina de Bolinhas Plus do Mickey</h3>
+                            <p>Indicada para crianças de até 6 anos. Mede 2 x 2,5 m e possui 1,7 m de altura.</p><button
+                                class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="pequenos"
+                        data-name="Multiatividades Patrulha Canina">
+                        <div class="toy-image"><img src="./img/patrulhacanina.png"
+                                alt="Multiatividades Patrulha Canina"><span>Para os pequenos</span></div>
+                        <div class="toy-content">
+                            <h3>Multiatividades Patrulha Canina</h3>
+                            <p>Indicada para crianças de até 6 anos. Mede 1,8 m de altura, 5,2 m de comprimento e 3,5 m
+                                de largura.</p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="pequenos" data-name="Multiplay Tigrão">
+                        <div class="toy-image"><img src="./img/tigrao.png"
+                                alt="Multiplay Tigrão"><span>Para os pequenos</span></div>
+                        <div class="toy-content">
+                            <h3>Multiplay Tigrão</h3>
+                            <p>Indicado para crianças de até 6 anos. Mede 1,8 m de altura, 5 m de comprimento e 3,2 m de
+                                largura.</p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="servicos" data-name="Canhão de Espuma">
+                        <div class="toy-image"><img src="./img/canhão.png"
+                                alt="Canhão de Espuma"><span>Serviços</span></div>
+                        <div class="toy-content">
+                            <h3>Canhão de Espuma</h3>
+                            <p>Canhão de espuma para ser utilizado junto com o Futebol de Sabão.</p><button
+                                class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="pequenos" data-name="Piscina de Bolinhas">
+                        <div class="toy-image"><img src="./img/piscinadebolinha.png"
+                                alt="Piscina de Bolinhas"><span>Para os pequenos</span></div>
+                        <div class="toy-content">
+                            <h3>Piscina de Bolinhas</h3>
+                            <p>Modelo tradicional com 1,5 x 1,5 metro, ideal para a diversão dos pequenos.</p><button
+                                class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="servicos" data-name="Algodão-doce">
+                        <div class="toy-image"><img src="./img/algodaodoce.jpg"
+                                alt="Algodão-doce"><span>Serviços</span></div>
+                        <div class="toy-content">
+                            <h3>Algodão-doce</h3>
+                            <p>Levamos o equipamento e um monitor da nossa equipe para preparar e distribuir o
+                                algodão-doce.</p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="servicos" data-name="Pipoca">
+                        <div class="toy-image"><img src="./img/pipoca.png"
+                                alt="Pipoca"><span>Serviços</span></div>
+                        <div class="toy-content">
+                            <h3>Pipoca</h3>
+                            <p>Levamos o equipamento, todos os materiais e um monitor para preparar e distribuir a
+                                pipoca.</p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                    <article class="toy-card reveal" data-category="servicos" data-name="Tatuagem Temporária">
+                        <div class="toy-image"><img src="./img/tatoo.png"
+                                alt="Tatuagem Temporária"><span>Serviços</span></div>
+                        <div class="toy-content">
+                            <h3>Tatuagem Temporária</h3>
+                            <p>Aplicação com tinta antialérgica e de fácil remoção, perfeita para completar a diversão.
+                            </p><button class="add-button">Adicionar <span>+</span></button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section steps" id="como-funciona">
+            <div class="container">
+                <div class="section-title reveal"><span class="eyebrow">Simples e rápido</span>
+                    <h2>Sua festa em 3 passos</h2>
+                </div>
+                <div class="steps-grid">
+                    <article class="step reveal"><b>01</b>
+                        <div class="step-icon">🧸</div>
+                        <h3>Escolha</h3>
+                        <p>Adicione à lista todos os brinquedos que combinam com a sua festa.</p>
+                    </article>
+                    <article class="step reveal"><b>02</b>
+                        <div class="step-icon">📅</div>
+                        <h3>Conte os detalhes</h3>
+                        <p>Informe a data, o local e os detalhes importantes do seu evento.</p>
+                    </article>
+                    <article class="step reveal"><b>03</b>
+                        <div class="step-icon">💬</div>
+                        <h3>Peça o orçamento</h3>
+                        <p>Envie tudo pelo WhatsApp e confirme a disponibilidade com a equipe.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery" id="galeria">
+            <div class="container">
+                <div class="section-head light reveal">
+                    <div><span class="eyebrow">Momentos especiais</span>
+                        <h2>Festas que ganharam vida</h2>
+                    </div><a href="https://www.instagram.com/animafest1505/" target="_blank" rel="noopener">Acompanhe no
+                        Instagram
+                        ↗</a>
+                </div>
+                <div class="gallery-grid">
+                    <figure class="gallery-main reveal"><img
+                            src="./img/galeria3.jpg"
+                            alt="Decoração de festa infantil">
+                        <figcaption>Festas cheias de cor e alegria</figcaption>
+                    </figure>
+                    <figure class="reveal"><img
+                            src="./img/galeriaguerra.png"
+                            alt="Criança em festa de aniversário"></figure>
+                    <figure class="reveal"><img
+                            src="./img/galerias2.png"
+                            alt="Brinquedos infantis coloridos"></figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="sobre">
+            <div class="container about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-logo"><img src="./img/Design_sem_nome__1_-removebg-preview.png"
+                            alt=""></div>
+
+                </div>
+                <div class="about-copy reveal"><span class="eyebrow">Sobre a Animafest</span>
+                    <h2>A diversão é levada a sério por aqui.</h2>
+                    <p>Desde 2000, levamos alegria e diversão para crianças e famílias de toda a Região Sul.
+                    </p>
+                    <label class="table">
+                        Atendemos diferentes tipos de comemorações e eventos:
+                        <ul class="lista1">
+                            <li>Aniversários infantis</li>
+                            <li>Casamentos</li>
+                            <li>Bodas</li>
+                            <li>Festas de 15 anos</li>
+                            <li>Confraternizações em geral</li>
+                            <li>Eventos em escolas</li>
+                            <li>Ações de divulgação em frente a lojas</li>
+                        </ul>
+                    </label>
+                    <div class="about-points">
+
+                    </div><a class="btn btn-primary" href="#brinquedos">Montar meu orçamento</a>
+                </div>
+            </div>
+
+
+            <div class="quem-somos">
+                <div class="quem-somos-titulo">
+                    <span class="eyebrow">Conheça nossa equipe</span>
+                    <h2>Quem Somos</h2>
+                    <p>
+                        Por trás da Animafest existem pessoas apaixonadas por criar momentos
+                        especiais e levar diversão para cada evento.
+                    </p>
+                </div>
+
+                <div class="donos-grid">
+
+                    <article class="dono-card">
+                        <img src="./img/dono1.jpg" alt="Foto de Nome do Proprietário">
+
+                        <div class="dono-info">
+                            <h3>Alexandre e Patricia</h3>
+                            <span>Fundadores da Animafest</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section class="section contact" id="contato">
+            <div class="container contact-card reveal">
+                <div><span class="eyebrow">Vamos planejar sua festa?</span>
+                    <h2>A diversão está a uma mensagem de distância.</h2>
+                    <p>Escolha os brinquedos ou fale agora com a Animafest para tirar suas dúvidas.</p>
+                    <div class="contact-links"><span>📍 Consulte nossa área de atendimento</span></div>
+                </div>
+                <div class="contact-buttons">
+
+                    <a class="btn btn-whatsapp" href="https://wa.link/y4k5x7" target="_blank" rel="noopener"><i
+                            class="fa-brands fa-whatsapp"></i> Conversar com Patrícia</a>
+
+                    <a class="btn btn-whatsapp"
+                        href="https://wa.me/5548999788836?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento"
+                        target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Conversar com Alexandre
+                    </a>
+
+                    <a class="btn btn-whatsapp btn-insta" href="https://www.instagram.com/animafest1505/"
+                        target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> @animafest1505</a>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-wrap"><a class="brand brand-footer" href="#inicio"><span class="brand-mark"><img
+                        src="./img/Design_sem_nome__1_-removebg-preview.png" alt=""></span><span
+                    class="brand-name">Animafest<small>Aluguel de
+                        brinquedos</small></span></a>
+            <p>Transformando festas em boas lembranças.</p>
+            <div><a href="https://www.instagram.com/animafest1505/" target="_blank" rel="noopener">Instagram</a><a
+                    href="https://wa.link/y4k5x7" target="_blank" rel="noopener">WhatsApp</a></div>
+        </div>
+        <div class="copyright">© <span id="year"></span> Animafest. Todos os direitos reservados.</div>
+    </footer>
+
+    <button class="floating-cart" id="floating-cart" aria-label="Abrir pedido"><span>🎈</span><strong><span
+                id="floating-count">0</span> brinquedo(s)</strong><small>Revisar pedido →</small></button>
+    <div class="modal" id="quote-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close></div>
+        <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button
+                class="modal-close" data-close aria-label="Fechar">×</button><span class="eyebrow">Seu orçamento</span>
+            <h2 id="modal-title">Vamos finalizar?</h2>
+            <div id="selected-list" class="selected-list"></div>
+            <form id="quote-form"><label>Seu nome<input id="customer-name" type="text"
+                        placeholder="Como podemos chamar você?" required></label>
+                <div class="form-row"><label>Data da festa<input id="event-date" type="date"
+                            required></label><label>Cidade /
+                        bairro<input id="event-place" type="text" placeholder="Onde será?" required></label></div>
+                <label>Observações<textarea id="event-notes" rows="3"
+                        placeholder="Idade das crianças, horário, dúvidas..."></textarea></label><button
+                    class="btn btn-whatsapp form-submit" type="submit">Enviar pedido pelo WhatsApp
+                    <span>↗</span></button>
+                <p class="form-note">O envio não confirma a reserva. A equipe verificará a disponibilidade e responderá
+                    com o
+                    orçamento.</p>
+            </form>
+        </section>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
